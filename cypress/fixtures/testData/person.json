@@ -1,0 +1,84 @@
+{
+   "negativeScenarios": [
+      {
+         "testData": {
+            "person": {
+               "address": {
+                  "city": "Phoenix",
+                  "state": "New Jersey"
+               },
+               "firstName": "",
+               "lastName": "Prosacco",
+               "ssn": "364524725"
+            }
+         },
+         "testDefinition": {
+            "scenario": "Verify person failed with empty firstname",
+            "tags": [
+               "regression",
+               "sanity",
+               "d016b5a5cd468db345383159ac470589"
+            ],
+            "testIdentifier": "d016b5a5cd468db345383159ac470589"
+         }
+      },
+      {
+         "testData": {
+            "person": {
+               "address": { },
+               "firstName": "Jimmy",
+               "lastName": "West",
+               "ssn": ""
+            }
+         },
+         "testDefinition": {
+            "scenario": "Verify person failed when ssn in null or empty",
+            "tags": [
+               "regression",
+               "4d2452be351b19b6d66e6a50cc78d688"
+            ],
+            "testIdentifier": "4d2452be351b19b6d66e6a50cc78d688"
+         }
+      }
+   ],
+   "positiveScenarios": [
+      {
+         "testData": {
+            "person": {
+               "address": { },
+               "firstName": "Conner",
+               "lastName": "Thompson",
+               "ssn": "710968220"
+            }
+         },
+         "testDefinition": {
+            "scenario": "Verify person entity can be created with empty address",
+            "tags": [
+               "sanity",
+               "person",
+               "ec1414479cb2f2ab38031fed053db310"
+            ],
+            "testIdentifier": "ec1414479cb2f2ab38031fed053db310"
+         }
+      },
+      {
+         "testData": {
+            "person": {
+               "address": { },
+               "firstName": "joe",
+               "lastName": "Kiehn",
+               "ssn": "669704346"
+            }
+         },
+         "testDefinition": {
+            "scenario": "Verify person is created with name=joe",
+            "tags": [
+               "sanity",
+               "regression",
+               "1bbce7d8be3857ea02b49738b5e3819d"
+            ],
+            "testIdentifier": "1bbce7d8be3857ea02b49738b5e3819d"
+         }
+      }
+   ]
+}
