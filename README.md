@@ -8,7 +8,7 @@
 - Dynamic test case generation using Jsonnet
 - Coverage for Positive and Negative scenarios
 
-## 🚀 Diagram to explain how the integration of cypress-jsonnet-gofakeit was implemented.
+## 🚀 Integration of cypress-jsonnet.
 ![Cypress-Jsonnet-Integration](./Cypress-Jsonnet-Integration.jpg)
 1. Pre-requisite : Make sure you have these softwares 
    - [Golang](https://go.dev/doc/install)
