@@ -9,7 +9,7 @@
 - Coverage for Positive and Negative scenarios
 
 ## 🚀 Diagram to explain how the integration of cypress-jsonnet-gofakeit was implemented.
-![Cypress-Jsonnet-Integration](./cypress-jsonnet-integration.jpg)
+![Cypress-Jsonnet-Integration](./Cypress-Jsonnet-Integration.jpg)
 1. Pre-requisite : Make sure you have these softwares 
    - [Golang](https://go.dev/doc/install)
    - [node js](https://nodejs.org/en/download)
