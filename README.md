@@ -18,7 +18,7 @@
       Run `go install github.com/google/go-jsonnet/cmd/jsonnet@latest`
 
 
-2. Clone this repo `git clone `
+2. Clone this repo `git clone https://github.com/skaiit/cy-jsonnet-dynamic.git`
 3. Open your favorite terminal window and cd to the folder.
 4. Now we can see how dynamic test and data from jsonnet can load into person.cy.ts
    - Run 🏃 `npx cypress open --e2e`
