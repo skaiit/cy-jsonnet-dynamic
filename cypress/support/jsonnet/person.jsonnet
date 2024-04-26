@@ -8,22 +8,22 @@ local DynamicTest(definition={}, data={}) = {
   positiveScenarios: [
     // Person
     DynamicTest(
-      definition=utils.testDefinition(fileName=std.thisFile,scenario='Verify person entity can be created with empty address', tags=['sanity', 'person']),
+      definition=utils.testDefinition(fileName=std.thisFile, scenario='Verify person entity can be created with empty address', tags=['sanity', 'person']),
       data=model.Person()
     ),
     DynamicTest(
-      definition=utils.testDefinition(fileName=std.thisFile,scenario='Verify person is created with name=joe', tags=['sanity', 'regression']),
-      data=model.Person(firstName='joe')
-    )
+      definition=utils.testDefinition(fileName=std.thisFile, scenario='Verify person is created with name=joe', tags=['sanity', 'regression']),
+      data=model.Person(firstName='joe', address=model.Address())
+    ),
   ],
   negativeScenarios: [
     DynamicTest(
-      definition=utils.testDefinition(fileName=std.thisFile,scenario='Verify person failed with empty firstname', tags=['regression', 'sanity']),
-      data=model.Person(firstName="",address=model.Address(city=std.native("fake")("{city}")))
+      definition=utils.testDefinition(fileName=std.thisFile, scenario='Verify person failed with empty firstname', tags=['regression', 'sanity']),
+      data=model.Person(firstName='', address=model.Address(city=std.native('fake')('{city}')))
     ),
     DynamicTest(
-      definition=utils.testDefinition(fileName=std.thisFile,scenario='Verify person failed when ssn in null or empty', tags=['regression']),
-      data=model.Person(ssn="")
+      definition=utils.testDefinition(fileName=std.thisFile, scenario='Verify person failed when ssn in null or empty', tags=['regression']),
+      data=model.Person(ssn='', address=model.Address())
     ),
   ],
 }
